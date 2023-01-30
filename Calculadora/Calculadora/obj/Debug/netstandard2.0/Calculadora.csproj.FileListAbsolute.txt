@@ -1,0 +1,15 @@
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\bin\Debug\netstandard2.0\Calculadora.deps.json
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\bin\Debug\netstandard2.0\Calculadora.dll
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\bin\Debug\netstandard2.0\Calculadora.pdb
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.csproj.AssemblyReference.cache
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.AssemblyInfoInputs.cache
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.AssemblyInfo.cs
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.dll
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\refint\Calculadora.dll
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Calculadora.pdb
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\ref\Calculadora.dll
+C:\Users\toman\source\repos\Calculadora\Calculadora\Calculadora\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs

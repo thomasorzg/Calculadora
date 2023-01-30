@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseButtonStyle" TargetType="Button">
+                <Setter Property="WidthRequest" Value="60" />
+                <Setter Property="HeightRequest" Value="60" />
+                <Setter Property="BorderRadius" Value="40" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Padding="15, 0, 15, 10" RowSpacing="7" ColumnSpacing="7" BackgroundColor="#0D0D0D">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label FontSize="Large" FontAttributes="Bold"  Text="{Binding NumberText}"
+               TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                Grid.ColumnSpan="4" />
+
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding BottomInfoText}"
+               TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+               LineBreakMode="NoWrap" Grid.ColumnSpan="4" Grid.Row="1" />
+
+        <Button Text="AC" Grid.Row="2" Grid.Column="0" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#A6A6A6"
+                Command="{Binding ClearAllCommand}" />
+
+        <Button Text="←" Grid.Row="2" Grid.Column="1" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#A6A6A6"
+                Command="{Binding ClearLastCommand}" />
+
+        <Button Text="%" Grid.Row="2" Grid.Column="2" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#A6A6A6"
+                x:Name="Percent" Command="{Binding OperationCommand}" CommandParameter="{x:Reference Percent}" />
+
+        <Button Text="÷" Grid.Row="2" Grid.Column="3" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#F28907"
+                x:Name="Divide" Command="{Binding OperationCommand}" CommandParameter="{x:Reference Divide}" />
+
+
+        <Button Text="7" Grid.Row="3" Grid.Column="0" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number7" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number7}" />
+
+        <Button Text="8" Grid.Row="3" Grid.Column="1" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number8" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number8}" />
+
+        <Button Text="9" Grid.Row="3" Grid.Column="2" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number9" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number9}" />
+
+        <Button Text="*" Grid.Row="3" Grid.Column="3" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#F28907"
+                x:Name="Multiply" Command="{Binding OperationCommand}" CommandParameter="{x:Reference Multiply}" />
+
+
+        <Button Text="4" Grid.Row="4" Grid.Column="0" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number4" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number4}" />
+
+        <Button Text="5" Grid.Row="4" Grid.Column="1" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number5" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number5}" />
+
+        <Button Text="6" Grid.Row="4" Grid.Column="2" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number6" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number6}" />
+
+        <Button Text="-" Grid.Row="4" Grid.Column="3" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#F28907"
+                x:Name="Substract" Command="{Binding OperationCommand}" CommandParameter="{x:Reference Substract}" />
+
+
+        <Button Text="1" Grid.Row="5" Grid.Column="0" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number1" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number1}" />
+
+        <Button Text="2" Grid.Row="5" Grid.Column="1" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number2" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number2}" />
+
+        <Button Text="3" Grid.Row="5" Grid.Column="2" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number3" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number3}" />
+
+        <Button Text="+" Grid.Row="5" Grid.Column="3" 
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#F28907"
+                x:Name="Add" Command="{Binding OperationCommand}" CommandParameter="{x:Reference Add}" />
+
+        <Button Text="0" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Number0" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Number0}" />
+
+        <Button Text="." Grid.Row="6" Grid.Column="2"
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#333333"
+                x:Name="Dot" Command="{Binding NumberCommand}" CommandParameter="{x:Reference Dot}" />
+
+        <Button Text="=" Grid.Row="6" Grid.Column="3"
+                Style="{StaticResource BaseButtonStyle}" BackgroundColor="#F28907" CornerRadius="40"
+                x:Name="Equals" Command="{Binding CalculateCommand}" CommandParameter="{x:Reference Equals}" />
+    </Grid>
+
+</ContentPage>
